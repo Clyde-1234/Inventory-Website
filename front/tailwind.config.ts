@@ -6,7 +6,15 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			height: {
+				'128': '32rem',
+				'192': '48rem'
+			},
+			width: {
+				'256': '64rem'
+			}
+		}
 	},
 
 	plugins: [typography, forms]

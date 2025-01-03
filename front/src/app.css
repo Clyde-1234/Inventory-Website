@@ -1,3 +1,22 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+@layer base {
+    :root{
+        @apply text-slate-300
+    }
+
+    .standard-icon{
+        @apply self-center text-4xl cursor-pointer text-slate-300 hover:text-slate-500 active:text-slate-400
+    }
+
+    .side-nav-button{
+        @apply justify-center w-full text-slate-300 h-24 flex hover:cursor-pointer hover:bg-slate-800 select-none active:bg-slate-700
+    }
+
+    .l-r-container{
+        @apply flex justify-between content-center
+    }
+}
