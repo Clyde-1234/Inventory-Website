@@ -6,7 +6,7 @@
 
     let searchText = "";
 
-    let currentPage : "client" | 'group' | 'inventory' = "inventory"
+    let currentPage : "client" | 'group' | 'inventory' | 'foodStorage'= "inventory"
 
     function searchInput(){
         /* Prevent default  */
@@ -68,6 +68,12 @@
                 </div>
             </button>
 
+            <button class="side-nav-button" onclick={() => currentPage = "foodStorage"}>
+                <Icon icon="mdi:basket-fill" class="standard-icon ml-auto"></Icon>
+                <div class=" p-4 mr-auto content-center h-full">
+                    <p class=" text-3xl font-sans">Food Storage</p>
+                </div>
+            </button>
             
         </aside>
 
