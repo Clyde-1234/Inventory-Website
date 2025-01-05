@@ -1,6 +1,6 @@
 <script lang="ts">
     import Icon from "@iconify/svelte";
-    import ItemCard from "./itemCard.svelte";
+    import ItemCard from "./smallComponents/itemCard.svelte";
     
     let tags: Array<String> = $state([]);
     

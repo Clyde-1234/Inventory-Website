@@ -3,6 +3,7 @@
     import Icon from "@iconify/svelte";
     import ClientPage from "../lib/clientPage.svelte";
     import GroupPage from "../lib/groupPage.svelte";
+    import FoodStorage from "$lib/foodStorage.svelte";
 
     let searchText = "";
 
@@ -84,6 +85,8 @@
         <GroupPage></GroupPage>
         {:else if currentPage === "client"}
         <ClientPage></ClientPage>
+        {:else if currentPage === "foodStorage"}
+        <FoodStorage></FoodStorage>
         {/if}
         
     </div>
